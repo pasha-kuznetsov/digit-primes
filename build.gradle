@@ -1,0 +1,15 @@
+apply plugin: 'cpp'
+
+model {
+    components {
+        primes(NativeExecutableSpec) { 
+            sources {
+                cpp {
+                    source {
+                        srcDir "src"
+                    }
+                }
+            }
+        }
+    }
+}
